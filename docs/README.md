@@ -4,5 +4,5 @@ This is simply some documentation I wrote, of stuff I found out on-the-way, and 
 Some of it is mentioned in the MA3 manual, but herte there is more detail.
 
 ## All About Plugins
-- [Docs For Plugin Users](docs/PluginUsers/README.md)
-- [Docs For Plugin Developers](docs/PluginDevelopers/README.md)
+- [Docs For Plugin Users](PluginUsers/README.md)
+- [Docs For Plugin Developers](PluginDevelopers/README.md)
