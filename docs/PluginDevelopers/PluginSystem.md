@@ -10,14 +10,29 @@ When MA3 starts, it loads the plugins according to their order in the Plugin Poo
 
 This is good to know if your plugins declare global variables, or relay on the existance of global variables.
 
-### ReloadPlugins Command
+### ReloadAllPlugins Command
 
-Running the "ReloadPlugins" command:
+Running the "ReloadAllPlugins" command:
 
-  - Reloades only plugins that are checked as "Installed = Yes"
-    AND their files were CHANGED since the last relaod.
-    
-  - Does not reset global variables. 
+- Reloades only plugins that are checked as "Installed = Yes" and their files were CHANGED since the last relaod.
+  - Does NOT reset global variables
+  - Does NOT reset object hooks
+
+### ReloadUI Command
+
+Running the "ReloadUI" command:
+
+- Reloades the whole LUA engine, as if the system was restarted.
+  - Resets global variables
+  - Resets object hooks
+
+### Load Show
+
+**When you load a new show, the LUA engine does NOT restarted !**
+
+There is currently no onShowLoad event.
+- global variables: **PERSIST**
+- object hooks: **RESET**
 
 ## Individual Plugin
 
